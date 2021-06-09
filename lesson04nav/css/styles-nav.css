@@ -1,0 +1,246 @@
+/*
+CSS color pallette
+
+#1A535C Midnight Green
+#4ECDC4 Medium Turquoise
+#f7fff7 Mint Cream
+#FF6B6B Bittersweet
+#ffe66d Naples Yellow
+--------------------------*/
+
+/*Global Styles
+--------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Biryani', sans-serif;
+    font-weight: lighter;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+a {
+    color: #ffe66d;
+}
+
+a:hover {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+#navbar {
+    width: 100%;
+    background-color: #f7fff7;
+}
+
+#nav, #nav ul /*all lists*/{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 1.25;
+}
+
+#nav a {
+   display:block;
+   width: 130px; 
+   text-decoration:none;
+   color: #FF6B6B
+}
+
+#nav li {
+    float:left;
+    text-align: center;
+    width: 130px; /*width needed or else opra goes nuts*/
+}
+
+#nav li ul { /*second level lists*/
+    position:absolute;
+    background:#f7fff7;
+    width:130px;
+    left: -999em; /*using left to hide display menus because display:none is not read by screen readers*/
+}
+
+#nav li:hover ul { /*lists nested under hovered list items*/
+    left:auto;
+}
+
+#nav li ul li:hover {
+    background:#ffe66d;
+}
+
+img {
+    width: 300px;
+}
+
+h1 {
+    color: #4ECDC4;
+    font-size: 82px;
+    font-weight:normal;
+    font-stretch:expanded;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 400px;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400px;
+    margin: 0;
+}
+
+p {
+    color: #1A535C;
+    font-family:'Biryani', sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/*Profile
+--------------------------*/
+header {
+    background-color: #ffe66d;
+    text-align: center;
+}
+
+/*Projects
+--------------------------*/
+.projects {
+    background-color: #f7fff7;
+}
+
+.projects a {
+    color: #1A535C;
+}
+
+.projects .btn {
+    color: #f7fff7;
+    background: #1A535C;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;  
+}
+
+.projects .btn:hover {
+    background: rgba(26, 83, 92, 80%);
+}
+
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #4ecdc4;
+    padding: 25px 0;
+}
+
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+
+/*Work Experience
+--------------------------*/
+.work-experience {
+    background-color: #4ECDC4;
+}
+
+.work-experience p {
+    color: #f7fff7;
+}
+
+.work-experience a {
+    color:#ffe66d;
+    text-decoration: none;
+}
+
+.work-experience ul {
+    text-decoration: none;
+    color: #f7fff7;
+}
+/*Education
+--------------------------*/
+
+/*Service Work
+--------------------------*/
+.service-work {
+    background-color: #ffe66d;
+}
+
+.service-work a {
+    color: #1A535C;
+}
+
+.service-work .btn {
+    color: #f7fff7;
+    background: #1A535C;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;  
+}
+
+.service-work .btn:hover {
+    background: rgba(26, 83, 92, 80%);
+}
+
+.organization {
+    overflow: hidden;
+    border-bottom: 1px dashed #4ecdc4;
+    padding: 25px 0;
+}
+
+.organization h3 {
+    margin-top: 0;
+}
+
+/*.organization img {
+    float: left;
+    margin-right: 20px;
+}
+No image, presently*/
+
+/*Contact Info
+--------------------------*/
+footer {
+    background-color: #FF6B6B;
+    color: #f7fff7;
+    text-align: center;
+}
+
+.contact-list {
+    list-style-type: none;
+    font-weight: 200;
+    font-size: small;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    color:  #f7fff7;
+}
